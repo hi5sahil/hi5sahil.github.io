@@ -1,7 +1,6 @@
 ---
 permalink: /blog/
 title: "All Posts"
-author_profile: true
 date: "9 June 2018"
 ---
 
