@@ -262,9 +262,7 @@ defaults:
       type: posts
     values:
       layout: single
-      subtitle: true
       read_time: true
-      date: true
       comments: false
       share: true
       related: true
