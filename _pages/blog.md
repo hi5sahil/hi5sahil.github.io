@@ -1,7 +1,6 @@
 ---
 permalink: /blog/
 title: "All Posts"
-date: "9 June 2018"
 ---
 
 {% include base_path %}
