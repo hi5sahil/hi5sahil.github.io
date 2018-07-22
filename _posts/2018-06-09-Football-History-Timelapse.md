@@ -1,6 +1,5 @@
 ---
 title: Football History Time Lapse
-subtitle: using gganimate
 date: "9 June 2018"
 ---
 
