@@ -10,7 +10,7 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-theme                  : "minimal-mistakes-jekyll"
+# theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
@@ -110,14 +110,14 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : sahil.gupta.92351995
+  facebook         : 
   foursquare       :
-  github           : hi5sahil
+  github           : 
   google_plus      :
   keybase          :
-  instagram        : hi5sahil
+  instagram        : 
   lastfm           :
-  linkedin         : sahilgupta1991
+  linkedin         : 
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
@@ -269,11 +269,4 @@ defaults:
       comments: false
       share: true
       related: true
-      author_profile: true
-  - 
-    scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
       author_profile: true
