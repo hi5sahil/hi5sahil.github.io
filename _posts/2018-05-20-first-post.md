@@ -1,7 +1,6 @@
 ---
 title: First post!
 subtitle: HELLO WORLD!! :)
-image: /img/hello_world.jpeg
 ---
 
 Hi everyone! My first post, super excited!
