@@ -100,36 +100,34 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            : hi5sahil@gmail.com
+  name             : "Sahil Gupta"
+  avatar           : "/assets/images/profilepic.png"
+  bio              : "I like Football, Hiking & Data Science!"
+  location         : "Seattle, WA"
+  email            : "hi5sahil@gmail.com"
   uri              :
-  home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : sahil.gupta.92351995
   foursquare       :
-  github           :
-  gitlab           :
+  github           : hi5sahil
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : hi5sahil
   lastfm           :
-  linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : sahilgupta1991
   pinterest        :
   soundcloud       :
-  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
-  steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
+  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
+  steam            :
   tumblr           :
   twitter          :
   vine             :
   weibo            :
   xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  youtube          :
 
 
 # Reading Files
@@ -258,14 +256,23 @@ compress_html:
 
 # Defaults
 defaults:
-  # _posts
-  - scope:
+  - 
+    scope:
       path: ""
       type: posts
     values:
       layout: single
-      author_profile: true
+      subtitle: true
       read_time: true
-      comments: # true
+      date: true
+      comments: false
       share: true
       related: true
+      author_profile: true
+  - 
+    scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
