@@ -267,6 +267,7 @@ defaults:
       share: true
       related: true
       author_profile: true
+      date: true
   - 
     scope:
       path: ""
