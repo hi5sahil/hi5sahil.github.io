@@ -3,7 +3,7 @@ title: Bayesians vs Frequentists!
 date: "11 Nov 2018"
 ---
 
-1. _**Frequentist View of Probability**_  
+1.) _**Frequentist View of Probability**_  
 The probability of an event (ex - observing an odd number on rolling a six faced die) is its relative frequency among all posible outcomes (here - 6 possible outcomes) when performing large number of independent identical trials (rolling the die)
 
 Note - The probability of an event for a single roll of die (just one trial) is either 0 (False) or 1 (True)
@@ -21,7 +21,7 @@ _Confidence Intervals_
 
 
 
-2. _**Bayesian View of Probability**_  
+2.) _**Bayesian View of Probability**_  
 In Bayesian world the probability of an event occuring is a subjective degree of belief 
 
 Note - The probability of an event for a single roll of die (just one trial) can be 0 (False), 1 (True) or something in between (Plausible)
@@ -34,7 +34,7 @@ _Credible Intervals_
 * Doesn't guarantees that 95% of the credible intervals (from 100 different samples) actually contain the true value of parameter
 * Final Conclusion is TRUE, FALSE or Plausible
 
-3. _**Bayesians' View is better when:**_  
+3.) _**Bayesians' View is better when:**_  
 * It is not possible to perform iid trials - 
 What is the probabiliity France will win against Croatia in WC Final?
 * Cold Start Problems - 
