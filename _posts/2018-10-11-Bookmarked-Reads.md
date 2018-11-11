@@ -9,3 +9,14 @@ Data Science's 3 components
 * Decision Science
 * Machine Learning
 
+2. [Netflix Recommendations: Beyond the 5 stars (Part 1)](https://medium.com/netflix-techblog/netflix-recommendations-beyond-the-5-stars-part-1-55838468f429)
+More than just predicting user's rating (explicit) for content, its about maximizing their enjoyment (implicit):
+* Communicating Pesronalization Awareness to the users
+* Having Diversity
+* Providing Explanations behind recommendations for trust
+* Social Circle
+* Recommendations within Genres
+* Freshness
+* Similarity (across multiple dimensions metadata, viewing data, ratings)
+
+
