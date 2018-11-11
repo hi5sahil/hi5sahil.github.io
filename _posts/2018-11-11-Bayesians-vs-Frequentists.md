@@ -35,10 +35,10 @@ _Credible Intervals_
 * Final Conclusion is TRUE, FALSE or Plausible
 
 3.) _**Bayesians' View is better when:**_  
-* It is not possible to perform iid trials - 
-What is the probabiliity France will win against Croatia in WC Final?
-* Cold Start Problems - 
-A clinical trial to find the right dose of a new medicine? (How to treat the first patient without any data? - use expert opinion / prior belief)
-Recommendation for a new user on Spotify or Netflix?
+* It is not possible to perform iid trials -  
+What is the probabiliity France will win against Croatia in WC Final?  
+* Cold Start Problems -  
+A clinical trial to find the right dose of a new medicine? (How to treat the first patient without any data? - use expert opinion / prior belief)  
+Recommendation for a new user on Spotify or Netflix?  
 
 
