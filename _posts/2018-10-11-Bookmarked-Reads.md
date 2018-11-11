@@ -19,4 +19,19 @@ More than just predicting user's rating (explicit) for content, its about maximi
 * Freshness
 * Similarity (across multiple dimensions metadata, viewing data, ratings)
 
+3. [Netflix Recommendations: Beyond the 5 stars (Part 2)](https://medium.com/netflix-techblog/netflix-recommendations-beyond-the-5-stars-part-2-d9b96aa399f5)
+Machine Learning for Personalization:
+* Linear regression
+* Logistic regression
+* Elastic nets
+* Singular Value Decomposition
+* Restricted Boltzmann Machines
+* Markov Chains
+* Latent Dirichlet Allocation
+* Association Rules
+* Gradient Boosted Decision Trees
+* Random Forests
+* Clustering techniques from the simple k-means to novel graphical approaches such as Affinity Propagation
+* Matrix factorization
+
 
