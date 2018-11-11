@@ -9,7 +9,7 @@ Data Science's 3 components
 * Decision Science
 * Machine Learning
 
-2. [Netflix Recommendations: Beyond the 5 stars (Part 1)](https://medium.com/netflix-techblog/netflix-recommendations-beyond-the-5-stars-part-1-55838468f429)
+2. [Netflix Recommendations: Beyond the 5 stars (Part 1)](https://medium.com/netflix-techblog/netflix-recommendations-beyond-the-5-stars-part-1-55838468f429)  
 More than just predicting user's rating (explicit) for content, its about maximizing their enjoyment (implicit):
 * Communicating Pesronalization Awareness to the users
 * Having Diversity
@@ -19,7 +19,7 @@ More than just predicting user's rating (explicit) for content, its about maximi
 * Freshness
 * Similarity (across multiple dimensions metadata, viewing data, ratings)
 
-3. [Netflix Recommendations: Beyond the 5 stars (Part 2)](https://medium.com/netflix-techblog/netflix-recommendations-beyond-the-5-stars-part-2-d9b96aa399f5)
+3. [Netflix Recommendations: Beyond the 5 stars (Part 2)](https://medium.com/netflix-techblog/netflix-recommendations-beyond-the-5-stars-part-2-d9b96aa399f5)  
 Machine Learning for Personalization:
 * Linear regression
 * Logistic regression
