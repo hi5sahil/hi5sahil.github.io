@@ -28,7 +28,7 @@ Note - The probability of an event for a single roll of die (just one trial) can
 
 _Credible Intervals_  
 * Unlike Frequentist Inference, Bayesian Inference doesn't necessarily needs many trials
-* Bayesians start with a prior belief (from domain knowledge about the hypothesis space) and use evidence from observed data to update their prior belief to calculate posterior belief
+* Bayesians start with a prior belief (from domain knowledge about the hypothesis space) and use evidence from observed data to update their prior belief and arrive at a posterior belief
 * Bayesians then calculats the mean and std dev of posterior distribution
 * Makes a claim that one should reasonably believe (with 95% probability) that population parameter is within the credible interval
 * Doesn't guarantees that 95% of the credible intervals (from 100 different samples) actually contain the true value of parameter
