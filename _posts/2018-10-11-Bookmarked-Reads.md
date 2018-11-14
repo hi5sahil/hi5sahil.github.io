@@ -34,4 +34,4 @@ Machine Learning for Personalization:
 * Clustering techniques from the simple k-means to novel graphical approaches such as Affinity Propagation
 * Matrix factorization
 
-
+4. [A Machine Learning Approach to Ranking Answers on Quora](https://engineering.quora.com/A-Machine-Learning-Approach-to-Ranking-Answers-on-Quora)
