@@ -29,7 +29,7 @@ raw_df.head(3)
 |mom starting to fear son's web series closest thing she will have to grandchild|1|local.theonion.com|
 
 
-All news articles from theonion.com are sarcastic whereas the ones from huffingpost.com are all non-Sarcastic. Since, the intention is to understand the linguistic features - vocabulary or semantics that help us identify sarcasm than building a 100% accurate model using just the website_name as a feature, we'll not use this variable while building our model.
+The news articles from theonion.com are all sarcastic whereas the ones from huffingpost.com are all non-Sarcastic. Since, the intention is to understand the linguistic features - vocabulary or semantics that help us identify sarcasm than building a 100% accurate model using just the website_name as a feature, we'll not use this variable while building our model.
 ```python
 pd.pivot_table(raw_df, values=['is_sarcastic'], index=['website_name'], #columns=['is_sarcastic'], 
                aggfunc=('sum','count'), fill_value=0)
