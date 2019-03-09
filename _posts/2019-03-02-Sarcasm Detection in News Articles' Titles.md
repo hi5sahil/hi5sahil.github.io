@@ -104,6 +104,9 @@ raw_df['tokens'] = raw_df['tokens'].apply(word_lematizer)
 
 _**Feature Engineering**_
 
+**Bag of Words**
+
+**Semantics**
 
 
 
