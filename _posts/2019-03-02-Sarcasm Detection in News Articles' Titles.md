@@ -6,12 +6,15 @@ date: "2 Nov 2019"
 Just one of the times you stumble upon an excellent dataset on Kaggle for a really interesting data mining problem - sarcasm detection in text. I have looked for labelled datasets for this problem earlier but couldn't find a reasonably clean corpus with sufficient instances.
 
 But this json has a class-balanced dataset with ~27K news headlines labelled as sarcastic or non-sarcastic.
+[Kaggle Link to Dataset](https://www.kaggle.com/rmisra/news-headlines-dataset-for-sarcasm-detection/home)
 
 ```python
 # Reading the JSON File
 raw_df = pd.read_json('Sarcasm_Headlines_Dataset.json', lines=True)
 raw_df.head()
 ```
+
+
 
 
 
