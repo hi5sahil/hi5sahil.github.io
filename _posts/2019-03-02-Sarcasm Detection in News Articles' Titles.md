@@ -12,7 +12,7 @@ But this json has a class-balanced dataset with ~27K news headlines labelled as 
 # Reading the JSON File
 raw_df = pd.read_json('Sarcasm_Headlines_Dataset.json', lines=True)
 
-# Extracting the Hostname from URL
+# Extracting the Hostname from URL using regular expressions
 raw_df['website_name'] = raw_df['article_link'].str.extract('(https://.*?[.]comhttp/'
                                                             '|https://.*?[.]com)', expand=True)
 raw_df['website_name'] = raw_df['website_name'].str.replace('https://','').str.replace('/','').str.replace('comhttp','com')
