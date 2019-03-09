@@ -32,8 +32,7 @@ raw_df.head(3)
 The news articles from theonion are all sarcastic whereas the ones from huffingpost are all non-sarcastic. Since, the aim is to understand the linguistic features - vocabulary or semantics that help us identify sarcasm rater than building a 100% accurate model using just the website_name as a feature, we'll not use this variable for modelling.
 
 ```python
-pd.pivot_table(raw_df, values=['is_sarcastic'], index=['website_name'], #columns=['is_sarcastic'], 
-               aggfunc=('sum','count'), fill_value=0)
+pd.pivot_table(raw_df, values=['is_sarcastic'], index=['website_name'], aggfunc=('sum','count'), fill_value=0)
 ```
 
 |website_name|is_sarcastic - count|is_sarcastic - sum|		
