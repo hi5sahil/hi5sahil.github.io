@@ -8,7 +8,7 @@ Just one of the times you stumble upon an excellent dataset on Kaggle for a real
 But this json has a class-balanced dataset with ~27K news headlines labelled as sarcastic or non-sarcastic.
 [Kaggle Link to Dataset](https://www.kaggle.com/rmisra/news-headlines-dataset-for-sarcasm-detection/home)
 
-**Data Exploration**
+_**Data Exhibit**_
 
 ```python
 # Reading the JSON File
