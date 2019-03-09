@@ -46,7 +46,63 @@ pd.pivot_table(raw_df, values=['is_sarcastic'], index=['website_name'], #columns
 |www.theonion.com|5811|5811|
 
 
-_**Data Cleaning & Feature Engineering**_
+_**Data Cleaning**_
+
+For NLP algorithms - Bag of Words or Doc2Vec, we'll first need a clean set of tokens.
+So, let's first start by some standard data cleaning steps while working with text:
+
+**1. Tokenizing**
+```python
+# Split into Words
+from nltk.tokenize import word_tokenize
+raw_df['tokens'] = raw_df['headline_feature'].apply(nltk.word_tokenize)
+```
+
+**2. Normalizing Case**
+```python
+# Convert to lower case
+lower_case_tokens = lambda x : [w.lower() for w in x]
+raw_df['tokens'] = raw_df['tokens'].apply(lower_case_tokens)
+```
+
+**3. Removing Punctuation**
+```python
+# Filter Out Punctuation
+import string
+punctuation_dict = str.maketrans(dict.fromkeys(string.punctuation))
+# This creates a dictionary mapping of every character from string.punctuation to None
+
+punctuation_remover = lambda x : [w.translate(punctuation_dict) for w in x]
+raw_df['tokens'] = raw_df['tokens'].apply(punctuation_remover)
+```
+
+**4. Removing Non-alphabetic Tokens**
+```python
+# Remove remaining tokens that are not alphabetic
+nonalphabet_remover = lambda x : [w for w in x if w.isalpha()]
+raw_df['tokens'] = raw_df['tokens'].apply(nonalphabet_remover)
+```
+
+**5. Filtering out Stop Words**
+```python
+# Filter out Stop Words
+from nltk.corpus import stopwords
+stop_words = set(stopwords.words('english'))
+stopwords_remover = lambda x : [w for w in x if not w in stop_words]
+raw_df['tokens'] = raw_df['tokens'].apply(stopwords_remover)
+```
+
+**6. Stemming / Lemmatizing the Tokens**
+```python
+# Stem / Lemmatize the Words
+from nltk.stem.wordnet import WordNetLemmatizer
+lmtzr = WordNetLemmatizer()
+word_lematizer = lambda x : [lmtzr.lemmatize(w) for w in x]
+raw_df['tokens'] = raw_df['tokens'].apply(word_lematizer)
+```
+
+
+
 
 
 
