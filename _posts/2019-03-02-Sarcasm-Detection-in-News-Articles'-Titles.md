@@ -266,7 +266,7 @@ weights = clf.coef_
 feature_weights = np.abs(weights[0])
 feature_names = np.array(raw_df2[features].columns)
 feature_importance = pd.DataFrame({'Features':feature_names, 'Weights':feature_weights}).sort_values(by='Weights', ascending=False).reset_index(drop = True)
-feature_importance.head(15)
+feature_importance.head(12)
 ```
 
 ||Features|Weights| 
