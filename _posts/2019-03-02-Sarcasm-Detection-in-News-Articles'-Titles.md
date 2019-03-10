@@ -285,3 +285,4 @@ feature_importance.head(12)
 |10|man|1.622804|
 |11|announces|1.613419|
 
+We discussed in the beginning why the words - ['Area', 'Man'](https://forum.wordreference.com/threads/what-is-an-area-man-or-area-woman.2534374/) & 'Clearly' show up as top features to identify sarcasm.
