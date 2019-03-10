@@ -21,7 +21,7 @@ raw_df[tokenDataFrame_Final.area == 1][['article_link','headline_feature','is_sa
 |https://www.theonion.com/area-insurance-salesman-celebrates-14th-year-of-quoting-1819565058|area insurance salesman celebrates 14th year of quoting fletch|1|
 |https://local.theonion.com/is-area-man-going-to-finish-those-fries-1819565422|is area man going to finish those fries?|1|
 
-Whereas few discoveries are generalized and appear in sarcastic text everywhere and even corroborate with personal experience. For example - 'Clearly' popped up in top 10 features and if I think of it people do tend to use the word frequently in sarcastic remarks.
+Whereas few discoveries are generalized and appear in sarcastic text everywhere and even corroborate with my personal experiences. For example - 'Clearly' popped up in top 10 features and if I think of it people do tend to use the word frequently in sarcastic remarks.
 
 |article_link|headline_feature|is_sarcastic|
 | -------------| -------------| -------------|
@@ -30,7 +30,7 @@ Whereas few discoveries are generalized and appear in sarcastic text everywhere 
 |https://www.theonion.com/elementary-schooler-clearly-just-learned-to-swear-1819566113|elementary schooler clearly just learned to swear|1|
 
 
-Cool... now, let's roll our sleeves up and get down to step-by-step going about this data mining problem. 
+Cool... now, let's get down to step-by-step going about the problem - Data Cleaning & Exploration, Feature Engineering & Model Training/Testing  
 
 _**Sample Data Exhibit**_
 
