@@ -9,7 +9,7 @@ But this json has a class-balanced dataset with ~27K news headlines labelled as 
 _**[Kaggle Link to Dataset](https://www.kaggle.com/rmisra/news-headlines-dataset-for-sarcasm-detection/home)**_
 
 This weekend data mining endeavour has been a good exercise to make fun discoveries around what makes a news headline to be sarcastic.
-Some discoveries were quite specific to this dataset. For example - I was surprised when the words 'Area' and 'Man' appeared in my top 10 features to identify sarcasm in news headlines. But then I found out _**['Area Man' is a sarcastic slang used as recurring joke on theonion.com](https://forum.wordreference.com/threads/what-is-an-area-man-or-area-woman.2534374/)**_
+Some discoveries were quite specific to this dataset. For example - I was surprised when the words _**'Area'**_ and _**'Man'**_ appeared in my top 10 features to identify sarcasm in news headlines. But then I found out _**['Area Man' is a sarcastic slang used as recurring joke on theonion.com](https://forum.wordreference.com/threads/what-is-an-area-man-or-area-woman.2534374/)**_
 
 ```python
 raw_df[tokenDF_Final.area == 1][['article_link','headline_feature','is_sarcastic']].head(3).reset_index(drop=True)
