@@ -48,7 +48,8 @@ pd.pivot_table(raw_df, values=['is_sarcastic'], index=['website_name'], aggfunc=
 _**Data Cleaning**_
 
 For NLP algorithms - Bag of Words or Doc2Vec, we'll first need a clean set of tokens.
-Note - Creating lists with _List Comprehensions_ is more concise and significantly faster than defining functions with _For Loops_ because it [escapes calling append attribute of the list in each iteration](https://stackoverflow.com/questions/30245397/why-is-a-list-comprehension-so-much-faster-than-appending-to-a-list). Hence, have resorted to LCs everywhere. 
+
+_Note - Creating lists with List Comprehensions is more concise and significantly faster than defining functions with For Loops because it [escapes calling append attribute of the list in each iteration](https://stackoverflow.com/questions/30245397/why-is-a-list-comprehension-so-much-faster-than-appending-to-a-list). Hence, have resorted to LCs everywhere._
 
 Ok, let's first start by some standard data cleaning steps while working with text:
 
