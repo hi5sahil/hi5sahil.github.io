@@ -106,6 +106,35 @@ _**Feature Engineering**_
 
 **Bag of Words**
 
+We can extract Term Frequency to build a Bag of Words model or else use TFIDF statistic (which discounts words which are too common across documents). Though instead of calculating the TFIDF statistic, I chose to simple remove terms which are too common or too rare because removing redundant features all together seems preferrable to avoid over-fitting arising from high dimensionality.
+
+Note - The earlier cleaning steps related to Stop Words removal and Non-Alphabetic tokens removal also addressed redundant dimensions.
+
+```python
+sentence_creator = lambda x : [' '.join(x)][0]
+raw_df['sentence_feature'] = raw_df['tokens'].apply(sentence_creator)
+```
+
+```python
+import sklearn.feature_extraction.text as sfText
+
+vect = sfText.CountVectorizer()#(ngram_range = (1, 2))
+vect.fit(raw_df['sentence_feature'])
+
+X = vect.transform(raw_df['sentence_feature'])
+tokenDataFrame = pd.DataFrame(X.A, columns = vect.get_feature_names())
+tokens_redundant = token_sums[token_sums < 10].index
+tokenDataFrame2 = tokenDataFrame.drop(tokens_redundant, axis = 1)
+```
+_Sample Term Frequency dataset using two headlines_
+|headline|better|black|catch|clerk|code|former|minority|mood|political|revival|roseanne|secret|shopper|store|sue|thorny|versace|worse|
+| ---| ---| ---| ---| ---| ---| ---| ---| ---|---| ---| ---| ---| ---| ---| ---| ---| ---| ---|
+|versace store clerk sues over secret 'black code' for minority shoppers|0|0|1|0|1|1|1|1|0|0|0|0|1|1|1|1|0|1|0|
+|roseanne' revival catches up to our thorny political mood, for better and worse|1|1|0|1|0|0|0|0|1|1|1|1|0|0|0|0|1|0|1|
+
+The unigram BoW models ignore the word order and context. We can resort to n-grams but it will lead to sparse high dimensional feature vectors. (have commented the code chunk for n-grams)
+
+
 **Semantics**
 
 
