@@ -205,7 +205,7 @@ pyplot.show()
 
 <img src="/assets/images/word2vec_visualization.PNG" alt="word2vec_visualization" class="inline"/>
 
-The behind the scenes magic of word2vec worked amazingly well as the model is grouping words by meaningful relationships (evident even in the 2-D representation of embeddings):
+Behind the scenes magic of word2vec worked amazingly well as the model is grouping words by meaningful relationships (evident even in the 2-D representation of embeddings):
 * Hillary-Clinton-Donald-Trump
 * Obama-President-White-House-Campaign
 * Area-Man
