@@ -207,7 +207,7 @@ pyplot.show()
 
 The behind the scenes magic of word2vec works amazingly well as the model is grouping words by meaningful relationships:
 * Hillary-Clinton-Donald-Trump
-* 
+* Obama-President-White-House-Campaign
 * Area-Man
 
 
