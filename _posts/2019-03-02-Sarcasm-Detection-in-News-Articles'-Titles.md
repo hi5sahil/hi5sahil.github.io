@@ -179,7 +179,7 @@ pyplot.rcParams['figure.figsize'] = [50, 100]
 pyplot.show()
 ```
 
-img src="/assets/images/word2vec_visualization.PNG" alt="word2vec_visualization" class="inline"/>
+<img src="/assets/images/word2vec_visualization.PNG" alt="word2vec_visualization" class="inline"/>
 
 
 
