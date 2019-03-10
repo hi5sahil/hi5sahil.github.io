@@ -229,13 +229,13 @@ target_var = ['is_sarcastic']
 
 Now, let's build a Logistic Regression model (rather than a black-box model) as we are interested in the feature importance (i.e. weights). 
 
-Train/Test split: 80/20
+**Train/Test split: 80/20**
 ```python
 from sklearn.model_selection import train_test_split, StratifiedKFold
 train_data, test_data, train_target, test_target = train_test_split(raw_df2[features].as_matrix(), raw_df2[target_var], train_size = .8, random_state = 100)
 ```
 
-5-Folds Cross Validated accuracy on Training Dataset: 0.83717882716338277
+**5-Folds Cross Validated accuracy on Training Dataset: 0.83717882716338277**
 ```python
 from sklearn import linear_model
 
@@ -243,7 +243,7 @@ clf = linear_model.LogisticRegressionCV(cv = 5, random_state=0, solver='lbfgs',m
 clf.score(train_data, train_target.values.ravel())
 ```
 
-Accuracy on Test Dataset: 0.78378884312991393
+**Accuracy on Test Dataset: 0.78378884312991393**
 Note - Sarcasm Detection is a challenging problem due to nuances in meaning. Therefore, this accuracy is impressive (I wasn't hoping to get ~80% accuracy when I set forth) but it is specifically for this news headlines dataset from theonion.com & huffingpost.com
 
 ```python
@@ -253,14 +253,14 @@ y_pred = clf.predict(test_data)
 accuracy_score(y_true, y_pred)
 ```
 
-Confusion Matrix: (2539, 467, 688, 1648)
+**Confusion Matrix: (2539, 467, 688, 1648)**
 ```python
 from sklearn.metrics import confusion_matrix
 tn, fp, fn, tp  = confusion_matrix(y_true, y_pred).ravel()
 (tn, fp, fn, tp)
 ```
 
-Feature Importance
+**Feature Importance**
 ```python
 weights = clf.coef_
 feature_weights = np.abs(weights[0])
