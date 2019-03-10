@@ -130,8 +130,8 @@ _Sample Term Frequency dataset using two headlines_
 
 |headline&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|better|black|catch|clerk|code|former|minority|mood|political|revival|roseanne|secret|shopper|store|sue|thorny|versace|worse| 
 | -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------|	
-|versace store clerk sues over secret 'black code' for minority shoppers|0|0|1|0|1|1|1|1|0|0|0|0|1|1|1|1|0|1|0| 
-|roseanne' revival catches up to our thorny political mood, for better and worse|1|1|0|1|0|0|0|0|1|1|1|1|0|0|0|0|1|0|1| 
+|former versace store clerk sue secret black code minority shopper|0|0|1|0|1|1|1|1|0|0|0|0|1|1|1|1|0|1|0| 
+|roseanne revival catch thorny political mood better worse |1|1|0|1|0|0|0|0|1|1|1|1|0|0|0|0|1|0|1| 
 
 The unigram BoW models ignore the word order and context. We can resort to n-grams but it will lead to sparse high dimensional feature vectors. (have commented the code chunk for n-grams)
 
