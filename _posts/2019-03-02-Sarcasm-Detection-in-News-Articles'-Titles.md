@@ -181,7 +181,7 @@ raw_df['mean_w2v'] = raw_df['fetch_w2v'].apply(mean_w2v)
 ```
 There is some more data wrangling then to transform the array of vectors to dataframe with each vector as a row. Corresponding code in Jupyter Notebook.
 
-Sample 2-D representation of the word embeddings to show the model works.
+Sample 2-D representation of the word embeddings to show the model works:
 
 ```python
 # Principal Component Analysis to represent word embeddings in 2-D
