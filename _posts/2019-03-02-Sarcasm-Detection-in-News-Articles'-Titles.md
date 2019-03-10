@@ -12,7 +12,7 @@ This weekend data mining endeavour has been a good exercise to make fun discover
 Some discoveries were quite specific to this dataset. For example - I was surprised when the words 'Area' and 'Man' appeared in my top 10 features to identify sarcasm in news headlines. But then I found out _**['Area Man' is a sarcastic slang used as recurring joke on theonion.com](https://forum.wordreference.com/threads/what-is-an-area-man-or-area-woman.2534374/)**_
 
 ```python
-raw_df[tokenDataFrame_Final.area == 1][['article_link','headline_feature','is_sarcastic']].head(3).reset_index(drop=True)
+raw_df[tokenDF_Final.area == 1][['article_link','headline_feature','is_sarcastic']].head(3).reset_index(drop=True)
 ```
 
 |article_link|headline_feature|is_sarcastic| 
@@ -213,3 +213,73 @@ Behind the scenes magic of word2vec worked amazingly well as the model is groupi
 
 
 ## _**Model Training & Testing**_
+
+Instead of using either/or we can combine the features from Bag of Words & doc2vec to build our model. Subsequently, see which ones are more informative for this problem.
+
+```python
+raw_df2 = pd.concat([w2v_DF, tokenDF_Final], axis=1)
+```
+
+Also, as a next step clearly state the training features & target variable.
+```python
+redundant = ['is_sarcastic','article_link','headline_feature','sentence_feature','tokens','website_name']
+features = list(set(raw_df2.columns) - set(redundant))
+target_var = ['is_sarcastic']
+```
+
+Now, let's build a Logistic Regression model (rather than a black-box model) as we are interested in the feature importance (i.e. weights). 
+
+Train/Test split: 80/20
+```python
+from sklearn.model_selection import train_test_split, StratifiedKFold
+train_data, test_data, train_target, test_target = train_test_split(raw_df2[features].as_matrix(), raw_df2[target_var], train_size = .8, random_state = 100)
+```
+
+5-Folds Cross Validated accuracy on Training Dataset: 0.83717882716338277
+```python
+from sklearn import linear_model
+
+clf = linear_model.LogisticRegressionCV(cv = 5, random_state=0, solver='lbfgs',multi_class='ovr',penalty='l2').fit(train_data, train_target.values.ravel())
+clf.score(train_data, train_target.values.ravel())
+```
+
+Accuracy on Test Dataset: 0.78378884312991393
+Note - Sarcasm Detection is a challenging problem due to nuances in meaning. Therefore, this accuracy is impressive (I wasn't hoping to get ~80% accuracy when I set forth) but it is specifically for this news headlines dataset from theonion.com & huffingpost.com
+
+```python
+from sklearn.metrics import accuracy_score
+y_true = test_target.values.ravel()
+y_pred = clf.predict(test_data)
+accuracy_score(y_true, y_pred)
+```
+
+Confusion Matrix: (2539, 467, 688, 1648)
+```python
+from sklearn.metrics import confusion_matrix
+tn, fp, fn, tp  = confusion_matrix(y_true, y_pred).ravel()
+(tn, fp, fn, tp)
+```
+
+Feature Importance
+```python
+weights = clf.coef_
+feature_weights = np.abs(weights[0])
+feature_names = np.array(raw_df2[features].columns)
+feature_importance = pd.DataFrame({'Features':feature_names, 'Weights':feature_weights}).sort_values(by='Weights', ascending=False).reset_index(drop = True)
+feature_importance.head(200)
+```
+
+||Features|Weights| 
+| -------------| -------------| -------------| 
+|0|area|2.846462|
+|1|nation|2.500518|
+|2|introduces|2.105833|
+|3|shit|2.069297|
+|4|local|1.953487|
+|5|self|1.891612|
+|6|fucking|1.882879|
+|7|report|1.868153|
+|8|study|1.803058|
+|9|clearly|1.660017|
+|10|man|1.622804|
+
