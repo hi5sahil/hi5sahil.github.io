@@ -127,7 +127,7 @@ tokenDataFrame = pd.DataFrame(X.A, columns = vect.get_feature_names())
 tokens_redundant = token_sums[token_sums < 10].index
 tokenDataFrame2 = tokenDataFrame.drop(tokens_redundant, axis = 1)
 ```
-_Sample Term Frequency dataset using two instances_ 
+_Sample Term Frequency dataset using two instances to demonstrate_ 
 
  
 |headline&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|better|black|catch|clerk|code|former|minority|mood|political|revival|roseanne|secret|shopper|store|sue|thorny|versace|worse| 
