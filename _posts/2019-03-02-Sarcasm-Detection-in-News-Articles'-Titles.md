@@ -8,7 +8,7 @@ Just one of the times you stumble upon an excellent dataset on Kaggle for a real
 But this json has a class-balanced dataset with ~27K news headlines labelled as sarcastic or non-sarcastic.
 _**[Kaggle Link to Dataset](https://www.kaggle.com/rmisra/news-headlines-dataset-for-sarcasm-detection/home)**_
 
-This weekend data mining endeavour has been a good exercise to make fun discoveries around what makes a headline to be sarcastic.
+This weekend data mining endeavour has been a good exercise to make fun discoveries around what makes a news headline to be sarcastic.
 Some discoveries were quite specific to this dataset. For example - I was surprised when the words 'Area' and 'Man' appeared in my top 10 features to identify sarcasm in news headlines. But then I found out _**['Area Man' is a sarcastic slang used as recurring joke on theonion.com](https://forum.wordreference.com/threads/what-is-an-area-man-or-area-woman.2534374/)**_
 
 ```python
