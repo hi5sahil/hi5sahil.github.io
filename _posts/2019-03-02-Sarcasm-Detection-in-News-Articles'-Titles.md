@@ -157,6 +157,28 @@ raw_df['mean_w2v'] = raw_df['fetch_w2v'].apply(mean_w2v)
 ```
 There is some more data wrangling then to transform the array of vectors to dataframe with each vector as a row. Corresponding code in Jupyter Notebook.
 
+Sample 2-D representation of the word embeddings to show the model works.
+
+```python
+# Principal Component Analysis to represent word embeddings in 2-D
+from sklearn.decomposition import PCA
+from matplotlib import pyplot
+X = model[model.wv.vocab]
+pca = PCA(n_components=2)
+result = pca.fit_transform(X)
+```
+
+``python
+# create a scatter plot of the projection
+pyplot.scatter(result[:, 0], result[:, 1])
+words = list(model.wv.vocab)
+for i, word in enumerate(words):
+    pyplot.annotate(word, xy=(result[i, 0], result[i, 1]))
+
+pyplot.rcParams['figure.figsize'] = [50, 100]
+pyplot.show()
+```
+
 
 
 
