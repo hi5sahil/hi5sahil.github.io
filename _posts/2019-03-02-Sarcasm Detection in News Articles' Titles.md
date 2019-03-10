@@ -127,6 +127,7 @@ tokens_redundant = token_sums[token_sums < 10].index
 tokenDataFrame2 = tokenDataFrame.drop(tokens_redundant, axis = 1)
 ```
 _Sample Term Frequency dataset using two headlines_ 
+
 |headline|better|black| 
 | -------------| -------------| -------------|
 
