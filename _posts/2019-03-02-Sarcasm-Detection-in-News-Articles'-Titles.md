@@ -208,7 +208,7 @@ pyplot.show()
 Behind the scenes magic of word2vec worked amazingly well as the model is grouping words by meaningful relationships (evident even in the 2-D representation of embeddings):
 * Hillary-Clinton-Donald-Trump
 * Obama-President-White-House-Campaign
-* Area-Man
+* [Area-Man](https://forum.wordreference.com/threads/what-is-an-area-man-or-area-woman.2534374/)
 
 
 
