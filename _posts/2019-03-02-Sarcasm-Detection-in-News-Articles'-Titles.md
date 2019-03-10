@@ -141,5 +141,22 @@ The unigram BoW models ignore the word order and context. We can resort to n-gra
 
 **Semantics**
 
+A better way to capture the context and latent relationships between different words including synonyms, antonyms, anologies etc is to use word2vec. The word2vec unsupervised models can learn context through vector representation of words called 'word embeddings' based on conditional probabilities of word occurrences around other words. Surprisingly, even with low dimensionality in hundreds, word2vec embeddings can learn really meaningful relationships. Once we have vectors for words, we can take the mean or sum of all words in a document to represent whole document as a single vector. There are also alternate doc2vec methods which directly learn vector representation for documents. I have chosen to average the word2vec embeddings because based on many posts on [stack overflow community](https://stackoverflow.com/questions/45234310/doc2vec-worse-than-mean-or-sum-of-word2vec-vectors) they perform better than doc2vec when dealling with small to medium side corpus.
+
+```python
+import gensim
+w2v_size = 100
+model = gensim.models.Word2Vec(raw_df['tokens'], size = w2v_size)
+w2v = dict(zip(model.wv.index2word, model.wv.syn0))
+
+# Word2Vec of Words
+fetch_w2v = lambda x : [w2v[w] for w in x if w in w2v]
+mean_w2v = lambda x : np.sum(x, axis=0)/len(x)
+raw_df['fetch_w2v'] = raw_df['tokens'].apply(fetch_w2v)
+raw_df['mean_w2v'] = raw_df['fetch_w2v'].apply(mean_w2v)
+```
+There is some more data wrangling then to transform the array of vectors to dataframe with each vector as a row. Corresponding code in Jupyter Notebook.
+
+
 
 
