@@ -285,4 +285,10 @@ feature_importance.head(12)
 |10|man|1.622804|
 |11|announces|1.613419|
 
-We discussed in the beginning why the words - ['Area', 'Man'](https://forum.wordreference.com/threads/what-is-an-area-man-or-area-woman.2534374/) & 'Clearly' show up as top features to identify sarcasm.
+We discussed in the beginning why the words - ['area', 'man'](https://forum.wordreference.com/threads/what-is-an-area-man-or-area-woman.2534374/) & 'clearly' show up as top features to identify sarcasm.
+
+Other top features like 'introduces', 'report', 'study', 'announces', 'unveils' has to do with sarcastic emphasis around false claims.
+|article_link|headline_feature|is_sarcastic| 
+| -------------| -------------| -------------| 
+|https://www.theonion.com/3m-introduces-new-line-of-protective-foam-eye-plugs-1822590036|3m introduces new line of protective foam eye plugs|1|
+|https://local.theonion.com/burger-king-introduces-new-thing-to-throw-in-front-of-k-1819573136|burger king introduces new thing to throw in front of kids after another hellish day at work|1|
