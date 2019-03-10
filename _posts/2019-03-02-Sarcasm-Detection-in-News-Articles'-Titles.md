@@ -136,7 +136,7 @@ _Sample Term Frequency dataset using two instances_
 |roseanne revival catch thorny political mood better worse|1|0|1|0|0|0|0|1|1|1|1|0|0|0|0|1|0|1|
 
 
-The unigram BoW models ignore the word order and context. We can resort to n-grams to retain some context but it will lead to sparse high dimensional feature vectors. (have commented the code chunk for n-grams)
+The unigram BoW models ignore the word order and context. We can resort to n-grams to retain some context but it will lead to sparse high dimensional feature vectors. (have therefore commented the code chunk for n-grams)
 
 
 **Semantics**
