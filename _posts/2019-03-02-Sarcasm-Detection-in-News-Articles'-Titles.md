@@ -244,6 +244,7 @@ clf.score(train_data, train_target.values.ravel())
 ```
 
 **Accuracy on Test Dataset: 0.78378884312991393** 
+
 Note - Sarcasm Detection is a challenging problem due to nuances in meaning. Therefore, this accuracy is impressive (I wasn't hoping to get ~80% accuracy when I set forth) but it is specifically for this news headlines dataset from theonion.com & huffingpost.com
 
 ```python
