@@ -6,10 +6,10 @@ date: "2 Mar 2019"
 Just one of the times you stumble upon an excellent dataset on Kaggle for a really interesting data mining problem - sarcasm detection in text. I have looked for labelled datasets for this problem earlier but couldn't find a reasonably clean corpus with sufficient instances.
 
 But this json has a class-balanced dataset with ~27K news headlines labelled as sarcastic or non-sarcastic.
-[Kaggle Link to Dataset](https://www.kaggle.com/rmisra/news-headlines-dataset-for-sarcasm-detection/home)
+_**[Kaggle Link to Dataset](https://www.kaggle.com/rmisra/news-headlines-dataset-for-sarcasm-detection/home)**_
 
 This weekend data mining endeavour has been a good exercise to make fun discoveries around what makes a headline to be sarcastic.
-Some discoveries were quite specific to this dataset. For example - I was surprised when the words 'Area' and 'Man' appeared in my top 10 features to identify sarcasm in news headlines. But then I found out ['Area Man' is a sarcastic slang used as recurring joke on theonion.com](https://forum.wordreference.com/threads/what-is-an-area-man-or-area-woman.2534374/)
+Some discoveries were quite specific to this dataset. For example - I was surprised when the words 'Area' and 'Man' appeared in my top 10 features to identify sarcasm in news headlines. But then I found out _**['Area Man' is a sarcastic slang used as recurring joke on theonion.com](https://forum.wordreference.com/threads/what-is-an-area-man-or-area-woman.2534374/)**__
 
 ```python
 raw_df[tokenDataFrame_Final.area == 1][['article_link','headline_feature','is_sarcastic']].head(3).reset_index(drop=True)
@@ -21,7 +21,7 @@ raw_df[tokenDataFrame_Final.area == 1][['article_link','headline_feature','is_sa
 |https://www.theonion.com/area-insurance-salesman-celebrates-14th-year-of-quoting-1819565058|area insurance salesman celebrates 14th year of quoting fletch|1|
 |https://local.theonion.com/is-area-man-going-to-finish-those-fries-1819565422|is area man going to finish those fries?|1|
 
-Whereas few discoveries are generalized and appear in sarcastic text everywhere and even corroborate with my personal experiences. For example - 'Clearly' popped up in top 10 features and if I think of it people do tend to use the word frequently in sarcastic remarks.
+Whereas few discoveries are generalized and appear in sarcastic text everywhere and even corroborate with my personal experiences. For example - _**'Clearly'**_ popped up in top 10 features and if I think of it people do tend to use the word frequently in sarcastic remarks.
 
 |article_link|headline_feature|is_sarcastic|
 | -------------| -------------| -------------|
