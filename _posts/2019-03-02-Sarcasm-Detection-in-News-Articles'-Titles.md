@@ -304,12 +304,14 @@ _**'study'**_
 |https://www.theonion.com/study-universe-actually-shrunk-by-about-19-inches-last-1819589814|study: universe actually shrunk by about 19 inches last year|1|
 
 whereas _**'fucking'**_ is used for sarcastic exaggeration to invoke humor
+
 |article_link|headline_feature|is_sarcastic| 
 | -------------| -------------| -------------| 
 |https://www.theonion.com/frontier-airlines-tells-customers-to-just-fucking-deal-1819580035|frontier airlines tells customers to just fucking deal with it|1|
 |https://www.theonion.com/girls-scouts-announces-they-ll-never-ever-let-gross-fuc-1825752568|girls scouts announces they'll never ever let gross fucking boys in|1|
 
 and _**'self'**_ is sarcastically calling out bad judgement/vanity etc
+
 |article_link|headline_feature|is_sarcastic| 
 | -------------| -------------| -------------| 
 |https://local.theonion.com/just-take-it-slow-and-you-ll-be-fine-drunk-driver-a-1820399426|'just take it slow, and you'll be fine,' drunk driver assures self while speeding away in stolen police car|1|
