@@ -15,6 +15,7 @@ Some discoveries were quite specific to this dataset. For example - I was surpri
 raw_df[tokenDataFrame_Final.area == 1][['article_link','headline_feature','is_sarcastic']].head(3).reset_index(drop=True)
 ```
 |article_link|headline_feature|is_sarcastic|
+| -------------| -------------| -------------|
 |https://local.theonion.com/area-woman-said-sorry-118-times-yesterday-1819576089|area woman said 'sorry' 118 times yesterday|1|
 |https://www.theonion.com/area-insurance-salesman-celebrates-14th-year-of-quoting-1819565058|area insurance salesman celebrates 14th year of quoting fletch|1|
 |https://local.theonion.com/is-area-man-going-to-finish-those-fries-1819565422|is area man going to finish those fries?|1|
@@ -22,6 +23,7 @@ raw_df[tokenDataFrame_Final.area == 1][['article_link','headline_feature','is_sa
 Whereas few discoveries are generalized and appear in sarcastic text everywhere and even corroborate with personal experience. For example - 'Clearly' popped up in top 10 features and if I think of it people do tend to use the word frequently in sarcastic remarks.
 
 |article_link|headline_feature|is_sarcastic|
+| -------------| -------------| -------------|
 |https://www.theonion.com/jealous-gps-clearly-wants-man-to-back-over-wife-1819589581|jealous gps clearly wants man to back over wife|1|
 |https://politics.theonion.com/new-job-posting-on-craigslist-clearly-for-secretary-of-1819568699|new job posting on craigslist clearly for secretary of the interior|1|
 |https://www.theonion.com/elementary-schooler-clearly-just-learned-to-swear-1819566113|elementary schooler clearly just learned to swear|1|
