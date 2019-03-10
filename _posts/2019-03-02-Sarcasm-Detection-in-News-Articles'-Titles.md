@@ -32,7 +32,7 @@ Whereas few discoveries are generalized and appear in sarcastic text everywhere 
 
 Cool... now, let's get down to step-by-step going about the problem - Data Cleaning & Exploration, Feature Engineering & Model Training/Testing  
 
-_**Sample Data Exhibit**_
+## _**Sample Data Exhibit**_
 
 ```python
 # Reading the JSON File
@@ -69,7 +69,7 @@ pd.pivot_table(raw_df, values=['is_sarcastic'], index=['website_name'], aggfunc=
 |www.theonion.com|5811|5811|
 
 
-_**Data Cleaning**_
+## _**Data Cleaning**_
 
 For NLP algorithms - Bag of Words or Doc2Vec, we'll first need a clean set of tokens.
 
@@ -127,7 +127,7 @@ word_lematizer = lambda x : [lmtzr.lemmatize(w) for w in x]
 raw_df['tokens'] = raw_df['tokens'].apply(word_lematizer)
 ```
 
-_**Feature Engineering**_
+## _**Feature Engineering**_
 
 **Bag of Words**
 
@@ -212,4 +212,4 @@ Behind the scenes magic of word2vec worked amazingly well as the model is groupi
 
 
 
-
+## _**Model Training & Testing**_
