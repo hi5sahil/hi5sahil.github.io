@@ -128,7 +128,7 @@ tokenDataFrame2 = tokenDataFrame.drop(tokens_redundant, axis = 1)
 ```
 _Sample Term Frequency dataset using two headlines_ 
 
-|&nbsp;headline|better|black|catch|clerk|code|former|minority|mood|political|revival|roseanne|secret|shopper|store|sue|thorny|versace|worse| 
+|headline&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|better|black|catch|clerk|code|former|minority|mood|political|revival|roseanne|secret|shopper|store|sue|thorny|versace|worse| 
 | -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------|	
 |versace store clerk sues over secret 'black code' for minority shoppers|0|0|1|0|1|1|1|1|0|0|0|0|1|1|1|1|0|1|0| 
 |roseanne' revival catches up to our thorny political mood, for better and worse|1|1|0|1|0|0|0|0|1|1|1|1|0|0|0|0|1|0|1| 
