@@ -130,8 +130,6 @@ _Sample Term Frequency dataset using two headlines_
 
 |headline|better|black|catch|clerk|code|former|minority|mood|political|revival|roseanne|secret|shopper|store|sue|thorny|versace|worse| 
 
-| -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------|-------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------| -------------|
-
 The unigram BoW models ignore the word order and context. We can resort to n-grams but it will lead to sparse high dimensional feature vectors. (have commented the code chunk for n-grams)
 
 
