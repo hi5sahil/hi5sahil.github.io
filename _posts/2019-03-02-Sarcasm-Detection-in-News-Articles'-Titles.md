@@ -14,8 +14,9 @@ Some discoveries were quite specific to this dataset. For example - I was surpri
 ```python
 raw_df[tokenDataFrame_Final.area == 1][['article_link','headline_feature','is_sarcastic']].head(3).reset_index(drop=True)
 ```
-|article_link|headline_feature|is_sarcastic|
-| -------------| -------------| -------------|
+
+|article_link|headline_feature|is_sarcastic| 
+| -------------| -------------| -------------| 
 |https://local.theonion.com/area-woman-said-sorry-118-times-yesterday-1819576089|area woman said 'sorry' 118 times yesterday|1|
 |https://www.theonion.com/area-insurance-salesman-celebrates-14th-year-of-quoting-1819565058|area insurance salesman celebrates 14th year of quoting fletch|1|
 |https://local.theonion.com/is-area-man-going-to-finish-those-fries-1819565422|is area man going to finish those fries?|1|
