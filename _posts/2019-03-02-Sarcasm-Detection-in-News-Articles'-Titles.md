@@ -168,7 +168,7 @@ pca = PCA(n_components=2)
 result = pca.fit_transform(X)
 ```
 
-``python
+```python
 # create a scatter plot of the projection
 pyplot.scatter(result[:, 0], result[:, 1])
 words = list(model.wv.vocab)
