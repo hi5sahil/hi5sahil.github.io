@@ -1,5 +1,5 @@
 ---
-title: Sarcasm-Detection-in-News-Articles'-Titles
+title: Sarcasm Detection in News Headlines
 date: "2 Mar 2019"
 ---
 
