@@ -331,4 +331,4 @@ feature_importance[feature_importance.Features.isin(w2v_col_names)]
 |955|c69|0.501301|
 |969|c14|0.497843|
 
-It probably has to do with the nature of articles in theonion.com and also, the relatively small size of corpus that the Bag of Words features turn out to be more informative for our model. But in other settings, when the size of corpus increases, the large vocabulary leads to sparse high dimensional feature vectors and in those problems the low dimensional dense feature vectors from doc2vec will likely serve us better.
+It probably has to do with the nature of articles in theonion.com and also, the relatively small size of corpus that the Bag of Words features turned out to be more informative for our model. But in other settings, when the size of corpus increases, the large vocabulary leads to sparse high dimensional feature vectors and in those problems the low dimensional dense feature vectors from doc2vec will likely serve us better.
