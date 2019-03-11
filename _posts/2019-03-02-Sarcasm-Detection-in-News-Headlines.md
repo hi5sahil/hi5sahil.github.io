@@ -179,7 +179,7 @@ mean_w2v = lambda x : np.sum(x, axis=0)/len(x)
 raw_df['fetch_w2v'] = raw_df['tokens'].apply(fetch_w2v)
 raw_df['mean_w2v'] = raw_df['fetch_w2v'].apply(mean_w2v)
 ```
-There is some more data wrangling then to transform the array of vectors to dataframe with each vector as a row. Corresponding code in Jupyter Notebook.
+There is some more data wrangling then to transform the array of vectors to dataframe with each vector as a row. Corresponding code in [Jupyter Notebook](https://github.com/hi5sahil/sarcasm-detection/blob/master/sarcasm_detection.ipynb).
 
 Sample 2-D representation of the word embeddings to show the model works:
 
