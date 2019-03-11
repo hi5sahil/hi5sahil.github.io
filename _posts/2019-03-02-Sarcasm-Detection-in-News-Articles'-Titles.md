@@ -316,3 +316,19 @@ and _**'self'**_ is sarcastically calling out bad judgement/vanity etc
 | -------------| -------------| -------------| 
 |https://local.theonion.com/just-take-it-slow-and-you-ll-be-fine-drunk-driver-a-1820399426|'just take it slow, and you'll be fine,' drunk driver assures self while speeding away in stolen police car|1|
 |https://www.theonion.com/narcissist-mentally-undresses-self-1819567215|narcissist mentally undresses self|1|
+
+
+Also, note that the latent features we learnt using doc2vec appeared quite low in importance.
+```python
+feature_importance[feature_importance.Features.isin(w2v_col_names)]
+```
+
+||Features|Weights|
+| -------------| -------------| -------------| 
+|603|c88|0.622868|
+|689|c92|0.592171|
+|940|c52|0.506800|
+|955|c69|0.501301|
+|969|c14|0.497843|
+
+It probably has to do with the nature of articles in theonion.com and also, the relatively small size of corpus that the Bag of Words features turn out to be more informative for our model. But in other settings, when the size of corpus increases, the large vocabulary leads to sparse high dimensional feature vectors and in those problems the low dimensional dense feature vectors from doc2vec will likely serve us better.
