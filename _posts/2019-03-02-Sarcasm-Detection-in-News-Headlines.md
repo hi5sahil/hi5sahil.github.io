@@ -264,26 +264,27 @@ tn, fp, fn, tp  = confusion_matrix(y_true, y_pred).ravel()
 **Feature Importance**
 ```python
 weights = clf.coef_
-feature_weights = np.abs(weights[0])
+feature_weights = weights[0]
+feature_abs_weights = np.abs(weights[0])
 feature_names = np.array(raw_df2[features].columns)
-feature_importance = pd.DataFrame({'Features':feature_names, 'Weights':feature_weights}).sort_values(by='Weights', ascending=False).reset_index(drop = True)
+feature_importance = pd.DataFrame({'Features':feature_names, 'Weights':feature_weights, 'Weights Absolute':feature_abs_weights}).sort_values(by='Weights Absolute', ascending=False).reset_index(drop = True)
 feature_importance.head(12)
 ```
 
-||Features|Weights| 
-| -------------| -------------| -------------| 
-|0|area|2.846462|
-|1|nation|2.500518|
-|2|introduces|2.105833|
-|3|shit|2.069297|
-|4|local|1.953487|
-|5|self|1.891612|
-|6|fucking|1.882879|
-|7|report|1.868153|
-|8|study|1.803058|
-|9|clearly|1.660017|
-|10|man|1.622804|
-|11|announces|1.613419|
+||Features|Weights|Weights Absolute|
+| -------------| -------------| -------------| -------------|
+|0|area|2.860869|2.860869|
+|1|nation|2.499772|2.499772|
+|2|introduces|2.109260|2.109260|
+|3|shit|2.069392|2.069392|
+|4|local|1.957934|1.957934|
+|5|self|1.894267|1.894267|
+|6|fucking|1.885271|1.885271|
+|7|report|1.877206|1.877206|
+|8|study|1.812988|1.812988|
+|9|clearly|1.657876|1.657876|
+|10|man|1.657209|1.657209|
+|11|announces|1.611359|1.611359|
 
 We discussed in the beginning why the words - _**['area', 'man'](https://forum.wordreference.com/threads/what-is-an-area-man-or-area-woman.2534374/)**_ & _**'clearly'**_ show up as top features to identify sarcasm.
 
@@ -323,12 +324,12 @@ Also, note that the latent features we learnt using doc2vec appeared quite low i
 feature_importance[feature_importance.Features.isin(w2v_col_names)]
 ```
 
-||Features|Weights|
-| -------------| -------------| -------------| 
-|399|c23|0.710881|
-|612|c19|0.620357|
-|839|c18|0.542748|
-|862|c57|0.534030|
-|875|c1|0.528192|
+||Features|Weights|Weights Absolute|
+| -------------| -------------| -------------| -------------|
+|700|c42|0.588654|0.588654|
+|1062|c94|0.471734|0.471734|
+|1152|c78|0.451407|0.451407|
+|1170|c85|-0.447847|0.447847|
+|1310|c61|0.412665|0.412665|
 
 It probably has to do with the nature of articles in theonion.com and also, the relatively small size of corpus that the Bag of Words features turned out to be more informative for our model. But in other settings, when the size of corpus increases, the large vocabulary leads to sparse high dimensional feature vectors and in those problems the low dimensional dense feature vectors from doc2vec will likely serve us better.
