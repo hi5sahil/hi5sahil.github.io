@@ -186,7 +186,7 @@ data.show_batch(rows=3, figsize=(7,8))
 ```
 
 
-![png](output_29_0.png)
+<img src="/assets/images/output_29_0.png" alt="output_29_0" class="inline"/>
 
 
 
@@ -365,8 +365,7 @@ learn.recorder.plot()
 ```
 
 
-![png](output_37_0.png)
-
+<img src="/assets/images/output_37_0.png" alt="output_37_0" class="inline"/>
 
 
 ```python
@@ -428,8 +427,7 @@ interp.plot_confusion_matrix()
 ```
 
 
-![png](output_43_0.png)
-
+<img src="/assets/images/output_43_0.png" alt="output_43_0" class="inline"/>
 
 
 ```python
@@ -569,8 +567,7 @@ interp.plot_confusion_matrix()
 ```
 
 
-![png](output_57_0.png)
-
+<img src="/assets/images/output_57_0.png" alt="output_57_0" class="inline"/>
 
 
 ```python
@@ -578,8 +575,7 @@ interp.plot_top_losses(9, figsize=(15,11), heatmap=False)
 ```
 
 
-![png](output_58_0.png)
-
+<img src="/assets/images/output_58_0.png" alt="output_58_0" class="inline"/>
 
 
 ```python
@@ -588,8 +584,7 @@ interp.plot_top_losses(9, figsize=(15,11), heatmap=False, largest=False)
 ```
 
 
-![png](output_59_0.png)
-
+<img src="/assets/images/output_59_0.png" alt="output_59_0" class="inline"/>
 
 
 ```python
@@ -600,8 +595,7 @@ interp.plot_confusion_matrix()
 ```
 
 
-![png](output_60_0.png)
-
+<img src="/assets/images/output_60_0.png" alt="output_60_0" class="inline"/>
 
 
 ```python
@@ -610,8 +604,7 @@ interp.plot_top_losses(9, figsize=(15,11), heatmap=False)
 ```
 
 
-![png](output_61_0.png)
-
+<img src="/assets/images/output_61_0.png" alt="output_61_0" class="inline"/>
 
 Then we create a new learner to use our new databunch with all the images.
 
@@ -716,9 +709,7 @@ img
 
 
 
-
-![png](output_78_0.png)
-
+<img src="/assets/images/output_78_0.png" alt="output_78_0" class="inline"/>
 
 
 We create our `Learner` in production enviromnent like this, jsut make sure that `path` contains the file 'export.pkl' from before.
