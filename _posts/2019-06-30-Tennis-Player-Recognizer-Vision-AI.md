@@ -1,6 +1,6 @@
 ---
 title: Tennis Player Recognizer Vision AI
-date: "9 June 2019"
+date: "30 June 2019"
 ---
 
 ## Creating your own dataset from Google Images
