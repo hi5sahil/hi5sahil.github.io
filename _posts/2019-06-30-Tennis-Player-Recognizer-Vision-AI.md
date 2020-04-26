@@ -1,10 +1,9 @@
-
 ---
 title: Tennis Player Recognizer Vision AI
 date: "9 June 2019"
 ---
 
-# Creating your own dataset from Google Images
+## Creating your own dataset from Google Images
 
 *by: Francisco Ingham and Jeremy Howard. Inspired by [Adrian Rosebrock](https://www.pyimagesearch.com/2017/12/04/how-to-create-a-deep-learning-dataset-using-google-images/)*
 
