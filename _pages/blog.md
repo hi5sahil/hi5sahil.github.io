@@ -1,6 +1,8 @@
 ---
 permalink: /blog/
 title: "All Posts"
+header:
+  image: /assets/images/enchantments_snow_lake.jpg
 ---
 
 {% include base_path %}
