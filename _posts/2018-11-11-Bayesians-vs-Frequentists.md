@@ -1,6 +1,9 @@
 ---
 title: Bayesians vs Frequentists!
 date: "11 Nov 2018"
+header:
+  #overlay_image: /assets/images/enchantments_snow_lake.jpg
+  overlay_color: "#333"
 ---
 
 1.) _**Frequentist View of Probability**_  
