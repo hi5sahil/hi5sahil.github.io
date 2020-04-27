@@ -1,6 +1,7 @@
 ---
 title: Football History Time Lapse
 date: "9 June 2018"
+comment: true
 ---
 
 How did the beautiful game of football propogate throughout the world?
