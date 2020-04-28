@@ -8,8 +8,6 @@ header:
   teaser: "https://imgs.xkcd.com/comics/frequentists_vs_bayesians.png"
 ---
 
-<img src="https://imgs.xkcd.com/comics/frequentists_vs_bayesians.png" alt="frequentists_vs_bayesians" class="inline"/>
-
 1.) _**Frequentist View of Probability**_  
 The probability of an event (ex - observing an odd number on rolling a six faced die) is its relative frequency among all posible outcomes (here - 6 possible outcomes) when performing large number of independent identical trials (rolling the die)
 
