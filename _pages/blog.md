@@ -2,7 +2,6 @@
 permalink: /blog/
 title: "All Posts"
 header:
-  #overlay_color: "#333"
   overlay_image: "https://media.giphy.com/media/26tPcVAWvlzRQtsLS/source.gif"
 ---
 
