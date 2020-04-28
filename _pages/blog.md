@@ -5,6 +5,7 @@ header:
   overlay_image: "https://media.giphy.com/media/26tPcVAWvlzRQtsLS/source.gif"
 ---
 
+
 {% include base_path %}
 {% capture written_year %}'None'{% endcapture %}
 {% for post in site.posts %}
