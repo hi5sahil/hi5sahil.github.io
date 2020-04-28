@@ -5,7 +5,7 @@ header:
   #overlay_image: /assets/images/enchantments_snow_lake.jpg
   overlay_color: "#333"
   show_overlay_excerpt: false
-  teaser: https://imgur.com/RK2tH5B"><img src="https://i.imgur.com/RK2tH5B.gif
+  teaser: "https://imgur.com/RK2tH5B"
 ---
 
 How did the beautiful game of football propogate throughout the world?
