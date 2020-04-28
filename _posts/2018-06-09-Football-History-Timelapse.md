@@ -4,6 +4,7 @@ date: "9 June 2018"
 header:
   #overlay_image: /assets/images/enchantments_snow_lake.jpg
   overlay_color: "#333"
+  show_overlay_excerpt: false
 ---
 
 How did the beautiful game of football propogate throughout the world?
