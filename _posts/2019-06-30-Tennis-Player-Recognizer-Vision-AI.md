@@ -1,13 +1,11 @@
 ---
 title: Tennis Player Recognizer Vision AI
 date: "30 June 2019"
-image:
-  teaser: /assets/images/output_57_0.png
-  feature: /assets/images/output_57_0.png
 header:
   #overlay_image: /assets/images/enchantments_snow_lake.jpg
   overlay_color: "#333"
   show_overlay_excerpt: false
+  teaser: /assets/images/output_57_0.png
 ---
 
 ## Creating your own dataset from Google Images
