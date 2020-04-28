@@ -5,6 +5,7 @@ header:
   #overlay_image: /assets/images/enchantments_snow_lake.jpg
   overlay_color: "#333"
   show_overlay_excerpt: false
+  teaser: "https://imgs.xkcd.com/comics/frequentists_vs_bayesians.png"
 ---
 
 1.) _**Frequentist View of Probability**_  
