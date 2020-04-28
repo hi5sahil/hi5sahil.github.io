@@ -24,6 +24,8 @@ url                      : "https://hi5sahil.github.io" # the base hostname & pr
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "hi5sahil/hi5sahil.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/enchantments_snow_lake.jpg" 
+header                   :
+  overlay_image          : "https://media.giphy.com/media/26tPcVAWvlzRQtsLS/source.gif"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
