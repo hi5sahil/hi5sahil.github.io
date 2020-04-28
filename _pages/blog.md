@@ -3,7 +3,7 @@ permalink: /blog/
 title: "All Posts"
 header:
   #overlay_image: /assets/images/enchantments_snow_lake.jpg
-  overlay_color: "#333"
+  #overlay_color: "#333"
   overlay_image: "https://gph.is/13DmgOt"
 ---
 
