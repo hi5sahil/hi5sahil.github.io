@@ -6,6 +6,7 @@ header:
   overlay_color: "#333"
 ---
 
+
 Just one of the times you stumble upon an excellent dataset on Kaggle for a really interesting data mining problem - sarcasm detection in text and cannot resist to take a stab at it. I have looked for labelled datasets for this problem earlier but couldn't find a reasonably clean corpus with sufficient instances.
 
 But this json has a class-balanced dataset with ~27K news headlines labelled as sarcastic or non-sarcastic.
