@@ -1,7 +1,7 @@
 ---
 permalink: /blog/
 title: "All Posts"
-image: "https://media.giphy.com/media/26tPcVAWvlzRQtsLS/source.gif"
+image_path: "https://media.giphy.com/media/26tPcVAWvlzRQtsLS/source.gif"
 
 #(header:)
   #(image: "https://media.giphy.com/media/26tPcVAWvlzRQtsLS/source.gif")
