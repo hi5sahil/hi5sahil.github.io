@@ -2,7 +2,10 @@
 permalink: /blog/
 title: "All Posts"
 header:
-  overlay_image: "https://media.giphy.com/media/26tPcVAWvlzRQtsLS/source.gif"
+  image: "https://media.giphy.com/media/26tPcVAWvlzRQtsLS/source.gif"
+  
+  [comment]: # (overlay_image: "https://media.giphy.com/media/26tPcVAWvlzRQtsLS/source.gif")
+  
 ---
 
 {% include base_path %}
