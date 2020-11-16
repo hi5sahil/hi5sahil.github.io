@@ -2,7 +2,7 @@
 permalink: /blog/
 title: "All Posts"
 image: "https://media.giphy.com/media/26tPcVAWvlzRQtsLS/source.gif"
-header:
+#(header:)
   [comment]: # (image: "https://media.giphy.com/media/26tPcVAWvlzRQtsLS/source.gif")
   
   [comment]: # (overlay_image: "https://media.giphy.com/media/26tPcVAWvlzRQtsLS/source.gif")
