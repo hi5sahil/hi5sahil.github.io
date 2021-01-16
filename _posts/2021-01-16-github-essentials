@@ -12,3 +12,66 @@ Shell Types
 * Korn shell (ksh)
 * Bourne Again shell (bash)
 * POSIX shell (sh)
+
+1. pwd (print working directory)
+
+2. ls (list)
+```sh
+#with argument curr directory
+ls
+
+#with argument
+ls  DIRECTORY
+```
+
+Basic Unix Commands
+
+pwd gives you the address of your current directory
+It is used without an argument
+pwd
+
+ls shows everything that is in a directory
+ls  DIRECTORY
+If you run ls without an argument ...
+it shows what is in the current directory
+cd (change directory)
+cd moves you to another directory
+cd  DIRECTORY
+If you run cd without an argument ...
+it takes you to your home directory
+Use .. to go up one directory
+cd  ..
+mv (move)
+mv moves a file or directory ...
+from one place to another
+mv FILE_OR_DIRECTORY_NAME  NEW_DIRECTORY
+You can also use mv to rename a file or directory
+mv FILE_OR_DIRECTORY_NAME  NEW_FILE_OR_DIRECTORY_NAME
+cp (copy)
+cp makes a new copy of a file
+To make a copy of the file in the same directory use
+cp  ORIGINAL_FILENAME  NEW_FILENAME
+You can also make a copy in another directory
+cp  ORIGINAL_FILENAME  DIRECTORY
+To make a copy of a directory, run cp ...
+with the -r (for recursive) option
+cat (concatenate)
+cat prints the contents of a file
+cat  FILENAME
+rm remove
+rm deletes a file
+It does not work on directories
+There is no undelete in Unix
+To remove all files in the current directory, use
+rm  *
+mkdir (make dirrectory)
+mkdir creates a directory
+mkdir  DIRECTORY_NAME
+rmdir (remove directory )
+rmdir deletes a directory
+It will not work unless the directory is empty
+nano
+nano is a simple text editor
+nano  FILENAME
+If the file does not exist, nano will create it
+You can find instruction on using nano here
