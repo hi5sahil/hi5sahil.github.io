@@ -88,4 +88,63 @@ head -n 20 FILENAME | tail -n 5
 tail -f FILENAME
 ```
 
+11. history (show history)
+
+12. clear (clear screen)
+
+13. install / update packages
+```sh
+#install
+sudo apt-get install packagename
+#update
+sudo apt-get update
+```
+
+14. grep <str> <files> (Find which files contain a certain word)
+```sh
+grep "some word" *	
+```
+
+15. chmod <opt> <file>	(Change file permission)
+```sh
+#Change file permissions read only
+chmod 644 *.html 
+```
+
+16. ps <opt> (List running process)
+```sh
+#List all running processes by #ID
+ps aux 
+#List process #ID's running by dhyatt
+ps aux | grep USERNAME	
+```
+
+17. kill <opt> <ID>	(kill a process)
+```sh
+#Kill process with ID #8453
+kill -9 8453	
+```
+
+18. gzip <file>	
+```sh
+#Compress file
+gzip bigfile 
+#Uncompress file
+gunzip bigfile.gz	
+```
+
+19. awk (Pattern search, replace and more)
+```sh
+#Print the lines which matches with the given pattern.
+awk '/someword/ {print}' FILENAME
+#Print 1st and 4th column
+awk '{print $1,$4}' FILENAME
+#Replace comma by null in 3rd column
+awk '{ gsub(",","",$3); print $3 }' FILENAME
+```
+
+20. diff (Compare files)
+```sh
+diff FILENAME1 FILENAME2
+```
 
