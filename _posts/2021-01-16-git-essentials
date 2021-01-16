@@ -17,26 +17,22 @@ Shell Types
 
 2. ls (list)
 ```sh
-#with argument curr directory
+#without argument curr directory
 ls
 
 #with argument
 ls DIRECTORY
 ```
 
-Basic Unix Commands
+3. cd (change directory)
+```sh
+#without argument home directory
+cd
 
-pwd gives you the address of your current directory
-It is used without an argument
-pwd
+#with argument
+cd DIRECTORY
+```
 
-ls shows everything that is in a directory
-ls  DIRECTORY
-If you run ls without an argument ...
-it shows what is in the current directory
-cd (change directory)
-cd moves you to another directory
-cd  DIRECTORY
 If you run cd without an argument ...
 it takes you to your home directory
 Use .. to go up one directory
