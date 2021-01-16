@@ -76,3 +76,16 @@ mkdir  DIRECTORY_NAME
 rmdir  DIRECTORY_NAME
 ```
 
+10. head / tail (first or last n lines)
+```sh
+head -n 2 FILENAME
+tail -n 2 FILENAME
+
+#combine
+head -n 20 FILENAME | tail -n 5
+
+#watch the file update
+tail -f FILENAME
+```
+```
+
