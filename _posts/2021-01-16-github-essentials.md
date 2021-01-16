@@ -21,7 +21,7 @@ Shell Types
 ls
 
 #with argument
-ls  DIRECTORY
+ls DIRECTORY
 ```
 
 Basic Unix Commands
