@@ -1,5 +1,5 @@
 ---
-title: Github Essentials!
+title: Unix Essentials!
 date: "25 May 2018"
 header:
   overlay_color: "#333"
@@ -148,3 +148,20 @@ awk '{ gsub(",","",$3); print $3 }' FILENAME
 diff FILENAME1 FILENAME2
 ```
 
+21. at (Scheduling a job)
+```sh
+#Schedule a job
+echo "sh backup.sh" | at 9:00 AM
+echo "sh backup.sh" | at now + 30 minutes
+#List the scheduled jobs using atq
+atq
+#Remove scheduled job using atrm
+atrm 3
+```
+
+22. more / less (pagination tool for viewing text files)
+```sh
+cat FILENAME | more
+```
+
+23. date (print current date)
