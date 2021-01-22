@@ -1,1 +1,15 @@
+---
+title: Python Notes!
+date: "22 Jan 2021"
+header:
+  show_overlay_excerpt: false
+---
 
+
+Reference: [python-namedtuple-working-and-benefits-of-namedtuple-in-python](https://medium.com/@rinu.gour123/python-namedtuple-working-and-benefits-of-namedtuple-in-python-276d679b2e9c#:~:text=Benefits%20of%20Python%20Namedtuple&text=Unlike%20a%20regular%20tuple%2C%20python,using%20names%20of%20the%20fields.&text=2.,is%20faster%20than%20a%20dictionary.)
+Benefits of Python Namedtuple
+Of course, no one would be using these if they observed no benefits at all. So, here we go:
+1. Unlike a regular tuple, python namedtuple can also access values using names of the fields.
+>>> red.red
+255
+2. Python namedtuple is just as memory-efficient as a regular tuple, because it does not have per-instance dictionaries. This is also why it is faster than a dictionary.
